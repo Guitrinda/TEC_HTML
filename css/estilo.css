@@ -1,0 +1,108 @@
+/* Paleta de cores */
+:root{
+    --cor1: #3d5493;
+    --cor2: #7a7db2;
+    --cor3: #b4afd5;
+    --cor4: #ece4fb;
+    --branco: #ffffff;
+    --preto: rgb(45, 45, 45);
+    --preto2: rgb(102, 102, 102);
+
+}
+
+/* Configurações gerais do site */
+
+*{margin: 0;border: 0;padding: 0;}
+
+html{font-family: Arial, Helvetica, sans-serif;font-size: 1em;}
+
+/* Config de Headlines */
+
+h1{font-size: 2em; margin-top: 2%;}
+h2{font-size: 1.3em;}
+h3{font-size: 1.8em;}
+h4{font-size: 1em;}
+h1,h2,h3,h4,h5,h6{padding-top: 0.4%;padding-bottom: 0.4%;}
+
+header{ background-color:var(--cor1);color:var(--branco); padding: 1%; position: fixed;
+        width: 100%;}
+      
+nav{display: block;text-align: center; padding: 5px; font-size: 1.2em; word-spacing: 10px;}
+
+a{text-decoration: none; color: var(--branco); font-weight: bold;}
+
+a:hover{color: var(--cor4);}
+
+footer{ background-color:var(--cor1);color:var(--branco); padding: 1%; text-align: center; font-weight: bold;}        
+
+body{background-color: var(--branco);}
+
+main{background-color: var(--cor4);
+     padding: 1%;
+     margin: auto;
+     width: 90%;
+     border-radius: 15px;
+     box-shadow: 1px 1px 5px var(--cor1);}
+
+aside{background-color: var(--cor4);
+     padding: 1%;
+     margin: auto;
+     width: 90%;
+     border-radius: 15px;
+     box-shadow: 1px 1px 5px var(--cor1);}     
+
+/*Configuraçõe de imagens*/
+img{
+    width: 100%; padding-top: 1%;
+}
+
+/* Configurações de botões de ação */
+button{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--preto);
+    color: var(--cor4);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+button:hover{background: var(--cor4); color: var(--preto2);}
+
+/* Configurações de paragrafo */
+
+p{padding-top: 0.8%; padding-bottom: 0.8%;}
+
+/* Configurações de paragrafo para dispositivos moveis */
+
+@media(min-width: 360px) and (max-width: 800px){
+
+    p{padding-top: 4%; padding-bottom: 4%;}
+}
+
+/* Configurações de divs */
+.separador{margin-top: 8%;}
+.separador-conteudo{margin-top: 0.1%;}
+
+/* Configurações de paragrafo para dispositivos moveis */
+
+@media(min-width: 360px) and (max-width: 800px){
+
+   .separador{margin-top: 13%;} 
+   .separador-conteudo{margin-top: 0.8%;}  
+}
+
+/*  Configurações da grade de conteúdo - Grids */
+#grid-conteudo{ background-color: var(--cor3);}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1024px;
+    margin: auto;
+    gap: 2px;
+}
+
+.grid div{text-align: center; background-color: var(--branco); padding: 2px;}
