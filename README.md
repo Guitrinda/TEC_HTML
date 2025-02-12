@@ -10,3 +10,7 @@
 
 - ``HTML``
 - ``CSS``
+
+
+![Status do projeto](https://img.shields.io/badge/Status-Finalizado-Red)
+
